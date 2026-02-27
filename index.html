@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>marshi-thakali-slicing</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Outfit:wght@100..900&display=swap"
+		rel="stylesheet">
+	<link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="site">
+		<!-- Site Header -->
+		<header class="site-header fixed z-10 w-full">
+			<div class="container">
+				<div class="site-header__inner flex flex-wrap items-center justify-between py-4 gap-1">
+					<div class="site-header__logo shrink-0">
+						<a href="#"><img src="./images/marshi-logo.svg" alt="Logo"></a>
+					</div>
+					<div class="right w-[88%] flex justify-end items-center gap-x-8">
+						<nav class="main-nav text-white xs-title">
+							<ul class="flex flex-wrap justify-end items-center gap-x-8 uppercase">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Menu</a></li>
+								<li><a href="#">Celebrity Visits</a></li>
+								<li><a href="#">gallery</a></li>
+								<li><a href="#">gallery</a></li>
+								<li><a href="#">contact</a></li>
+							</ul>
+						</nav>
+						<a href="#" class="arrow-btn uppercase text-[14px] flex gap-2 text-white items-center font-bold">
+							<span class="text">reserve</span>
+							<span class="icon">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.83325 5.83333H14.1666V14.1667" stroke="#F8F2ED" stroke-width="1.66667"
+										stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M5.83325 14.1667L14.1666 5.83333" stroke="#F8F2ED" stroke-width="1.66667"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header><!-- End of Site Header -->
+		<!-- Site Main -->
+		<main class="site-main">
+			<!-- Hero Section -->
+			<section
+				class="hero relative inset-0 before:content-[''] before:absolute before:inset-0 before:bg-black/60 before:z-1 flex items-center min-h-screen overflow-hidden pt-40 pb-24">
+				<div class="video-bg absolute inset-0 w-full h-full object-cover">
+					<video class="w-full h-full object-cover" autoplay loop muted playsinline
+						src="./images/marsi-hero.mp4"></video>
+				</div>
+				<div class="content relative z-10 w-full text-white">
+					<div class="container">
+						<div class="upper">
+							<div class="title-pre flex items-center gap-4 mb-6">
+								<span class="w-12 h-px bg-white"></span>
+								<span class="text-xs md:text-sm uppercase tracking-[0.3em]"> Jhamsikhel, Lalitpur </span>
+							</div>
+							<h1
+								class="title text-[12vw] md:text-[8vw] lg:text-[7vw] font-light leading-[0.9] tracking-tight mb-6">
+								Thakali <span class="italic font-normal /80">Cuisine</span>
+							</h1>
+							<div class="text text-base md:text-lg /70 max-w-md leading-relaxed mb-10">
+								<p>Authentic flavors from the heart of Nepal's Mustang region. Recipes preserved across
+									generations.</p>
+							</div>
+							<div class="btn-wrap flex items-center gap-8">
+								<a href="#menu"
+									class="group flex items-center gap-4 text-sm uppercase tracking-[0.2em] duration-500">
+									<span class="relative text-secondary"> Explore Menu <span
+											class="absolute -bottom-1 left-0 w-full h-px bg-current origin-left scale-x-100 group-hover:scale-x-0 transition-transform duration-500"></span>
+									</span>
+								</a>
+								<a href="#menu"
+									class="group flex items-center gap-4 text-sm uppercase tracking-[0.2em] duration-500">
+									<span class="relative"> Our Story <span
+											class="absolute -bottom-1 left-0 w-full h-px bg-current origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
+									</span>
+								</a>
+								<!--  -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Meta -->
+				<div class="hero-meta z-10 text-white absolute bottom-[10%] right-18 flex flex-col gap-16 items-end">
+					<div class="hidden lg:block">
+						<div class="border border-primary-foreground/20 px-4 py-6 backdrop-blur-sm">
+							<span
+								class="text-[10px] uppercase tracking-[0.3em] text-primary-foreground/60 [writing-mode:vertical-rl] rotate-180">
+								Open Daily 10AM – 9PM </span>
+						</div>
+					</div>
+					<div class="hidden md:flex flex-col items-center gap-4">
+						<span
+							class="text-[10px] uppercase tracking-[0.3em] text-primary-foreground/40 [writing-mode:vertical-rl] rotate-180">
+							Scroll </span>
+						<div class="w-px h-16 bg-white"></div>
+					</div>
+				</div>
+			</section><!-- End of Hero Section -->
+			<!-- About Section -->
+			<section class="about md:py-32 py-18">
+				<div class="container">
+					<!-- <div class="section-header mb-20 flex flex-col gap-8">
+						<div class="pre-heading flex gap-4 items-center">
+							<span class="numb text-[60px] leading-none tracking-[0.01em] italic font-primary text-primary">01</span>
+							<span class="w-12 h-px bg-text-light"></span>
+							<span class="xs-title uppercase text-text-light">Our Story</span>
+						</div>
+						<div class="sec-title-text flex flex-wrap justify-between gap-4 md:flex-nowrap">
+							<h2 class="h2 text-primary has-high-trans-bg">Words from <br><span>Our Guests</span></h2>
+							<div class="text wd:max-w-[636px] md:max-w-[480px] text-text-light pt-4">
+								<p>Each dish is crafted with recipes passed down through generations, using authentic spices and
+									fresh local ingredients.</p>
+							</div>
+						</div>
+					</div> -->
+					<!-- Section Header -->
+					<div class="section-header md:mb-20 mb-10 flex flex-col gap-8">
+						<div class="pre-heading flex gap-4 items-center">
+							<span
+								class="numb text-[60px] leading-none tracking-[0.01em] italic font-primary text-primary">01</span>
+							<span class="w-12 h-px bg-text-light"></span>
+							<span class="xs-title uppercase text-text-light">Our Story</span>
+						</div>
+					</div><!-- End of Section Header -->
+					<!-- Two Col -->
+					<div class="two-col flex flex-wrap justify-between items-center gap-8">
+						<div class="img-col md:w-[38.80%] sm:w-[80%]">
+							<figure>
+								<img src="./images/about-img.jpg"
+									alt="Interior view of the cozy seating area at our Jhamsikhel location" loading="lazy"
+									width="800" height="600">
+								<figcaption class="mt-4 text-[12px] leading-[1.33] tracking-[0.3px] text-text-light" aria-hidden="true"> Our warm, inviting space in
+									Jhamsikhel </figcaption>
+							</figure>
+						</div>
+						<div class="text-col md:w-[47.6%] pb-6">
+							<div class="text">
+								<h2 class="h2 text-primary has-high-trans-bg mb-8">A taste of the <br><span>Himalayas</span>
+								</h2>
+								<div class="text text-text-light flex flex-col gap-6">
+									<p>Marsi Thakali brings the authentic flavors of Thakali cuisine to the heart of Lalitpur.
+										Our restaurant is dedicated to preserving the rich culinary traditions of the Thakali
+										people from the Mustang district.</p>
+									<p>Every dish tells a story—from our signature Dal Bhat sets to our flavorful curries and
+										handmade momos. We invite you to experience the warmth of Nepali hospitality.</p>
+								</div>
+							</div>
+							<!-- Counter -->
+							<div class="counter flex flex-wrap gap-x-19 gap-y-4 pt-8 mt-12 border-t border-lg-white">
+								<div class="item flex flex-col gap-2">
+									<span class="text-[36px] leading-[1.11em] tracking-[0.16px] font-primary">25+</span>
+									<span class="text-[12px] leading-[1.33em] uppercase text-text-light tracking-[1.8px]">Authentic Dishes</span>
+								</div>
+								<div class="item flex flex-col gap-2">
+									<span class="text-[36px] leading-[1.11em] tracking-[0.16px] font-primary">15+</span>
+									<span class="text-[12px] leading-[1.33em] uppercase text-text-light tracking-[1.8px]">Years of Recipes</span>
+								</div>
+								<div class="item flex flex-col gap-2">
+									<span class="text-[36px] leading-[1.11em] tracking-[0.16px] font-primary">∞</span>
+									<span class="text-[12px] leading-[1.33em] uppercase text-text-light tracking-[1.8px]">Love & Care</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of Two Col -->
+				</div>
+			</section>
+			<!-- End of About Section -->
+		</main><!-- End of Main -->
+		<!-- Site FOoter -->
+		<footer class="site-footer">
+			<div class="site-footer__inner">
+				<div class="site-footer__logo">
+					<!-- <img src="/logo.svg" alt="Logo"> -->
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
