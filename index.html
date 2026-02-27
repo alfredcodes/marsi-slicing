@@ -202,7 +202,8 @@
 						</div>
 					</div><!-- End of Section Header -->
 					<!-- Featured Menu Items -->
-					<div class="fmi-grids grid grid-cols-[repeat(4,minmax(260px,1fr))] gap-4 pb-4 overflow-x-auto">
+					<div
+						class="fmi-grids grid grid-cols-[repeat(4,minmax(260px,1fr))] gap-4 sm:pb-4 pb-2 overflow-x-auto custom-scrollbar">
 						<!-- Cols -->
 						<div class="fmi-cols">
 							<!-- FMI Card -->
@@ -264,6 +265,57 @@
 							</div>
 						</div><!-- End of Cols -->
 					</div><!-- End of Featured Menu Items -->
+					<div class="filter-search-holder flex sm:flex-nowrap flex-wrap-reverse justify-between sm:gap-10 gap-6 pt-17 items-end pb-6">
+						<!-- Menu Filter -->
+						<div class="menu-filter text-text-light border-b border-lg-white md:w-[70%] sm:w-[60%] w-full">
+							<ul class="flex gap-4 overflow-auto custom-scrollbar pb-6">
+								<li class="px-4 sm:pb-4 pb-2 border-b border-primary">
+									<button class="sm-title text-text">All</button>
+								</li>
+								<li class="px-4 sm:pb-4 pb-2">
+									<button class="sm-title cursor-pointer transition-colors hover:text-text">Starters</button>
+								</li>
+								<li class="px-4 sm:pb-4 pb-2">
+									<button class="sm-title cursor-pointer transition-colors hover:text-text">Mains</button>
+								</li>
+								<li class="px-4 sm:pb-4 pb-2">
+									<button class="sm-title cursor-pointer transition-colors hover:text-text">Drinks</button>
+								</li>
+								<li class="px-4 sm:pb-4 pb-2">
+									<button class="sm-title cursor-pointer transition-colors hover:text-text">Desserts</button>
+								</li>
+							</ul>
+						</div><!-- End of Menu Filter -->
+						<!-- Search Menu Item -->
+						<div class="search-menu-item sm:w-auto w-full">
+							<form action="#" class="relative flex items-center justify-between border-b border-lg-white" role="search" action="/search" method="get">
+								<input type="search" id="main-search" name="q" placeholder="Search..."
+									class="pr-4 py-2 border-0 focus:outline-none sm-title" autocomplete="off">
+								<span class="icon">
+									<svg class="w-[16px] h-[16px]" width="64px" height="64px" viewBox="0 0 32 32" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+										xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+										<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+										<g id="SVGRepo_iconCarrier">
+											<title>search</title>
+											<defs> </defs>
+											<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+												sketch:type="MSPage">
+												<g id="Icon-Set" sketch:type="MSLayerGroup"
+													transform="translate(-256.000000, -1139.000000)" fill="var(--color-text-light)">
+													<path
+														d="M269.46,1163.45 C263.17,1163.45 258.071,1158.44 258.071,1152.25 C258.071,1146.06 263.17,1141.04 269.46,1141.04 C275.75,1141.04 280.85,1146.06 280.85,1152.25 C280.85,1158.44 275.75,1163.45 269.46,1163.45 L269.46,1163.45 Z M287.688,1169.25 L279.429,1161.12 C281.591,1158.77 282.92,1155.67 282.92,1152.25 C282.92,1144.93 276.894,1139 269.46,1139 C262.026,1139 256,1144.93 256,1152.25 C256,1159.56 262.026,1165.49 269.46,1165.49 C272.672,1165.49 275.618,1164.38 277.932,1162.53 L286.224,1170.69 C286.629,1171.09 287.284,1171.09 287.688,1170.69 C288.093,1170.3 288.093,1169.65 287.688,1169.25 L287.688,1169.25 Z"
+														id="search" sketch:type="MSShapeGroup"> </path>
+												</g>
+											</g>
+										</g>
+									</svg>
+								</span>
+							</form>
+						</div>
+						<!-- End of Search Menu Item -->
+					</div>
 				</div>
 			</section><!-- End of menu section -->
 		</main><!-- End of Main -->
