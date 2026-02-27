@@ -6,6 +6,7 @@
 	--color-secondary: #FFD287;
 	--color-text: #201713;
 	--color-text-light: #8C7B73;
+	--color-text-light-two: #8C7B73;
 	--color-bg-one: #F8F2ED;
 	--color-bg-two: #FAEDDD;
 	--color-body-bg: #faf5f2;
@@ -26,7 +27,7 @@
 
 @layer base {
 	body {
-		@apply text-[18px] leading-[1.55] font-light font-base tracking-[0.16px] text-text bg-bg-one;
+		@apply text-[18px] leading-[1.55] font-light font-base tracking-[0.16px] text-text bg-bg-one break-words;
 	}
 
 	h1,
