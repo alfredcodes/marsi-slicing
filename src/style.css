@@ -3,7 +3,7 @@
 @theme {
 	/* Colors */
 	--color-primary: #69260C;
-	--color-primary-dark:#A64830;
+	--color-primary-dark: #A64830;
 	--color-secondary: #FFD287;
 	--color-text: #201713;
 	--color-text-light: #8C7B73;
@@ -107,5 +107,53 @@
 @layer components {
 	.arrow-btn {
 		letter-spacing: 4.2px;
+	}
+
+	.ol-card-lists {
+		padding-left: 210px;
+
+		@media screen and (max-width: 991px) {
+			padding-left: 0;
+		}
+	}
+
+	.ol-card-lists img {
+		transform-style: preserve-3d;
+		@apply h-auto object-cover;
+		aspect-ratio: 1/1.4;
+		
+		
+		@media screen and (min-width: 992px) {
+			@apply w-[305px] h-[348px] object-cover;
+			margin-left: -210px;
+			&:nth-child(1) {
+				transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) skew(0deg, 0deg);
+			}
+
+			&:nth-child(2) {
+				transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-4deg) skew(0deg, 0deg);
+			}
+
+			&:nth-child(3) {
+				transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-2deg) skew(0deg, 0deg);
+			}
+
+			&:nth-child(4) {
+				transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+			}
+
+			&:nth-child(5) {
+				transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(2deg) skew(0deg, 0deg);
+			}
+
+			&:nth-child(6) {
+				transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(4deg) skew(0deg, 0deg);
+			}
+
+			&:nth-child(7) {
+				transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(6deg) skew(0deg, 0deg);
+			}
+		}
+
 	}
 }
