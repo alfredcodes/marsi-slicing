@@ -18,6 +18,7 @@
 	--font-primary: "Cormorant", serif;
 
 	/* Breakpoints */
+	--breakpoint-xxs: 375px;
 	--breakpoint-xs: 568px;
 	--breakpoint-sm: 768px;
 	--breakpoint-md: 992px;
