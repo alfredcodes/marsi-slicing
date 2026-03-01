@@ -17,19 +17,18 @@
 <body>
 	<div class="site">
 		<!-- Site Header -->
-		<header class="site-header fixed z-10 w-full hidden">
+		<header class="site-header fixed z-10 w-full">
 			<div class="container">
 				<div class="site-header__inner flex flex-wrap items-center justify-between py-4 gap-1">
 					<div class="site-header__logo shrink-0">
-						<a href="#"><img src="./images/marshi-logo.svg" alt="Logo"></a>
+						<a href="#"><img class="md:w-[86px] w-[80px]" src="./images/marshi-logo.svg" alt="Logo"></a>
 					</div>
-					<div class="right w-[88%] flex justify-end items-center gap-x-8 hidden">
-						<nav class="main-nav text-white xs-title">
+					<div class="right md:w-[88%] w-[50%] flex justify-end items-center md:gap-x-8 gap-x-6">
+						<nav class="main-nav text-white xs-title md:block hidden">
 							<ul class="flex flex-wrap justify-end items-center gap-x-8 uppercase">
 								<li><a href="#">About</a></li>
 								<li><a href="#">Menu</a></li>
 								<li><a href="#">Celebrity Visits</a></li>
-								<li><a href="#">gallery</a></li>
 								<li><a href="#">gallery</a></li>
 								<li><a href="#">contact</a></li>
 							</ul>
@@ -45,6 +44,11 @@
 								</svg>
 							</span>
 						</a>
+						<div class="hamn-menu md:hidden flex flex-col gap-1.5">
+							<span class="w-[24px] h-px bg-bg-one"></span>
+							<span class="w-[24px] h-px bg-bg-one"></span>
+							<span class="w-[24px] h-px bg-bg-one"></span>
+						</div>
 					</div>
 				</div>
 			</div>
