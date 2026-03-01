@@ -17,13 +17,13 @@
 <body>
 	<div class="site">
 		<!-- Site Header -->
-		<header class="site-header fixed z-10 w-full">
+		<header class="site-header fixed z-10 w-full hidden">
 			<div class="container">
 				<div class="site-header__inner flex flex-wrap items-center justify-between py-4 gap-1">
 					<div class="site-header__logo shrink-0">
 						<a href="#"><img src="./images/marshi-logo.svg" alt="Logo"></a>
 					</div>
-					<div class="right w-[88%] flex justify-end items-center gap-x-8">
+					<div class="right w-[88%] flex justify-end items-center gap-x-8 hidden">
 						<nav class="main-nav text-white xs-title">
 							<ul class="flex flex-wrap justify-end items-center gap-x-8 uppercase">
 								<li><a href="#">About</a></li>
@@ -923,11 +923,53 @@
 			</section><!-- End of Help Section -->
 		</main><!-- End of Main -->
 		<!-- Site Footer -->
-		<footer class="site-footer">
-			<div class="site-footer__inner">
-				<div class="site-footer__logo">
-					<!-- <img src="/logo.svg" alt="Logo"> -->
+		<footer class="site-footer lp:pt-32 md:pt-18 pt-14 pb-66 bg-footer-bg relative overflow-hidden">
+			<div class="container">
+				<div class="site-footer__inner">
+					<div class="site-footer__top flex flex-wrap justify-between items-center md:gap-6 gap-10">
+						<!-- Left -->
+						<div class="left md:w-[28%]">
+							<div class="foot-logo">
+								<a href="#"><img class="md:w-[108px]" src="./images/marshi-logo.svg" alt=""></a>
+							</div>
+							<div class="text text-[16px] leading-[1.625em] text-[#F6F5F366] tracking-[0.16px] mt-4">
+								<p>Authentic Thakali cuisine in the heart of Lalitpur. Experience the true taste of the
+									Himalayas. </p>
+							</div>
+						</div>
+						<!-- Right -->
+						<div class="left">
+							<ul
+								class="flex flex-wrap gap-x-8 gap-y-4 text-[14px] leading-[1.42em] text-[#F6F5F366] tracking-[2.1px] uppercase">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Menu</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div
+						class="site-footer__bottom flex xs:flex-row flex-col xs:justify-between items-center gap-4 pt-8 mt-5 border-t border-[#F6F5F31A] text-[12px] leading-[1.625em] text-[#F6F5F366] tracking-[0.3px]">
+						<div class="copyright">
+							<p>© 2026 Marsi Thakali. All rights reserved.</p>
+						</div>
+						<div class="back-to-top-holder">
+							<button class="back-top uppercase">
+								<span>Back to top</span>
+								<span>↑</span>
+							</button>
+						</div>
+					</div>
 				</div>
+			</div>
+			<!-- Absolute Text -->
+			<div class="abs-text abs-graphic absolute left-1/2 -translate-x-1/2 bottom-40 z-0 opacity-4 pointer-events-none">
+				<span class="lp:text-[31vw] wd:text-[38vw] md:text-[40vw] text-[30vw] leading-none text-[#F6F5F3] sm:tracking-[-14.4px] font-primary">Marsi</span>
+			</div>
+			<!-- End of Absolute Text -->
+			<!-- Graphic -->
+			<div class="abs-graphic absolute left-1/2 -translate-x-1/2 bottom-0 z-10 opacity-30 pointer-events-none">
+				<img src="./images/footer-graph.svg" alt="">
 			</div>
 		</footer><!-- End of Site Footer -->
 	</div>
